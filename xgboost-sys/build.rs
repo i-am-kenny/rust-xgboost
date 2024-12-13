@@ -24,7 +24,6 @@ fn main() {
     // CMake
     #[cfg(feature = "cuda")]
     let dst = Config::new(&xgb_root)
-        .uses_cxx11()
         .define("BUILD_STATIC_LIB", "ON")
         .define("USE_CUDA", "ON")
         .define("BUILD_WITH_CUDA", "ON")
