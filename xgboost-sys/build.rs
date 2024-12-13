@@ -33,8 +33,7 @@ fn main() {
     let mut dst = Config::new(&xgb_root);
 
     #[allow(unused_mut)]
-    let mut dst = dst.uses_cxx11()
-        .define("BUILD_STATIC_LIB", "ON");
+    let mut dst = dst.define("BUILD_STATIC_LIB", "ON");
 
     #[cfg(target_os = "macos")]
     {
